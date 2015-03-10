@@ -7,5 +7,4 @@ FactoryGirl.define do
     km 2000
     model "comfortline"
   end
-
 end

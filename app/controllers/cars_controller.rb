@@ -1,4 +1,5 @@
 class CarsController < ApplicationController
+  before_filter :authenticate_admin!, except: [:show]
   def show
     @car = Car.find(params[:id])
   end
