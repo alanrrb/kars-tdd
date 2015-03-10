@@ -25,7 +25,7 @@ feature "Admin creates a new car" do
 
   def login_as_admin
     admin = create(:admin)
-    fill_in "Email", with: admin.email
+    fill_in "Email",    with: admin.email
     fill_in "Password", with: admin.password
     click_button "Log in"
   end
